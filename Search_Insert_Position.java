@@ -1,4 +1,4 @@
-public class Search-Insert-Position {
+public class Search_Insert_Position {
    // Search Insert Function (Using Binary Search)
     public int searchInsert(int[] nums, int target) {
         // Initialize two variables

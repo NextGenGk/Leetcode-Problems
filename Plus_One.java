@@ -1,4 +1,4 @@
-public class Plus-One {
+public class Plus_One {
    public int[] plusOne(int[] digits) {
         // Store digits length in a variable
         int n = digits.length;
