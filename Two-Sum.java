@@ -48,7 +48,7 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 1. Create an HashMap
 2. Loop through nums length & add all the elements in hashMap
 3. Store the first element in a variable (number)
-4. find remainder (target - number)
+4. Find remainder (target - number)
 5. If hashMap contains element return element
   */
 
