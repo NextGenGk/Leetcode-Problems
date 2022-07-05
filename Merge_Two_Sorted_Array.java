@@ -75,3 +75,54 @@ Note that because m = 0, there are no elements in nums1. The 0 is only there to 
 Time - O(m+n)
 Space - O(1)
 */
+
+// 2nd Approach (Merge Sort Method) -
+/*
+void mergeArrays(int arr1[], int arr2[], int n1,
+  int n2, int arr3[]) {
+  int i = 0, j = 0, k = 0;
+  while (i < n1 && j < n2) {
+    if (arr1[i] < arr2[j])
+      arr3[k++] = arr1[i++];
+    else
+      arr3[k++] = arr2[j++];
+  }
+  while (i < n1)
+    arr3[k++] = arr1[i++];
+
+  while (j < n2)
+    arr3[k++] = arr2[j++];
+}
+ */
+
+// Algorithm -
+/*
+1. Create an auxiliary array of size N + M.
+2. Put two pointers i and j and initialise them to 0.
+3. Pointer i points to the first array, whereas pointer j points to the second array.
+4. Traverse both the array simultaneously using the pointers, and pick the smallest elements among both the array and insert in into the auxiliary array.
+5. Increment the pointers.
+6. After traversal, return the merged array.
+ */
+
+// Time & Space Complexity -
+/*
+Time Complexity:O(N + M), where N and M is the size of array A[] and B[]
+Space Complexity:O(N + M), as the auxiliary array is used
+ */
+
+// Approach 3 (Insert Sort Approach) -
+/*
+public void merge(int[] nums1, int m, int[] nums2, int n) {
+        for (int i = 0; i < n; i++) {
+            nums1[i + m] = nums2[i];
+        }
+        Arrays.sort(nums1);
+    }
+ */
+
+// Time & Space Complexity -
+/*
+Time Complexity:O((N + M)log(N+M)), where N and M are the size of array A[] and B[]
+Space Complexity:O(N), built-in sort takes space
+ */
