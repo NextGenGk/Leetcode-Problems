@@ -11,7 +11,7 @@ public class Is_Palindrome {
         // This will store the reverse of the number
         int reverse = 0;
         while (number > 0) {
-            // Store the remainder in rem varible
+            // Store the remainder in rem variable
             int rem = number % 10;
             // Add this remainder to reverse
             reverse = reverse * 10 +  rem;
@@ -19,7 +19,7 @@ public class Is_Palindrome {
             number = number/10;
         }
         // If number is equal to reverse
-        if (number == reverse) {
+        if (x == reverse) {
             return true;
         }
         // Else
@@ -62,7 +62,7 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
 // Time & Space Complexity -
 /*
-Time - O(n)
+Time - O(log10n) because we are dealing with integers which are base 10.
 Space - O(1);
 */
 
