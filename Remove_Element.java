@@ -6,7 +6,7 @@ public class Remove_Element {
         int k = 0;
 
         // Start traversing elements
-        for (int i=0; i<nums.length-1; i++) {
+        for (int i=0; i<nums.length; i++) {
             // Check, If current value is equal to target, then skip this iteration
             if (nums[i] == val) {
                 continue;
